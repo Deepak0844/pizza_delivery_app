@@ -12,7 +12,7 @@ export function Cart() {
   carts(cart.length);
 
   const getCart = () => {
-    fetch("http://localhost:9000/cart")
+    fetch("https://testing-api-hackathon.herokuapp.com/cart")
       .then((data) => data.json())
       .then((crt) => setCart(crt));
   };
@@ -20,7 +20,7 @@ export function Cart() {
 
   const deleteCart = (_id) => {
     console.log(_id);
-    fetch(`http://localhost:9000/cart/${_id}`, {
+    fetch(`https://testing-api-hackathon.herokuapp.com/cart/${_id}`, {
       method: "DELETE",
     }).then(() => getCart());
   };
