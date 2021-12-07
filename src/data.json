@@ -1,0 +1,133 @@
+[
+    {
+      "_id": "61ae11303a2eb79d58f2febd",
+      "name": "The Unthinkable Pizza",
+      "description": "Loaded with Plant Based Protein topping along with Black Olives & Red Paprika enjoy this unique 100%",
+      "image": "https://images.dominos.co.in/PIZ0167.jpg",
+      "price": 459,
+      "category": "bestseller",
+      "type": "veg"
+    },
+    {
+      "_id": "61ae11303a2eb79d58f2febe",
+      "name": "Margherita",
+      "description": "A classic delight with 100% Real mozzarella cheese",
+      "image": "https://images.dominos.co.in/new_margherita_2502.jpg",
+      "price": 199,
+      "category": "bestseller",
+      "type": "veg"
+    },
+    {
+      "_id": "61ae11303a2eb79d58f2febf",
+      "name": "Farmhouse",
+      "description": "Delightful combination of onion, capsicum, tomato & grilled mushroom",
+      "image": "https://images.dominos.co.in/farmhouse.png",
+      "price": 399,
+      "category": "bestseller",
+      "type": "veg"
+    },
+    {
+      "_id": "61ae11303a2eb79d58f2fec0",
+      "name": "Veg Extravaganza",
+      "description": "Black olives, capsicum, onion, grilled mushroom, corn, tomato, jalapeno & extra cheese",
+      "image": "https://images.dominos.co.in/new_veg_extravaganza.jpg",
+      "price": 459,
+      "category": "bestseller",
+      "type": "veg"
+    },
+    {
+      "_id": "61ae11303a2eb79d58f2fec1",
+      "name": "Veggie Paradise",
+      "description": "The awesome foursome! Golden corn, black olives, capsicum, red paprika",
+      "image": "https://images.dominos.co.in/new_veggie_paradise.jpg",
+      "price": 399,
+      "category": "bestseller",
+      "type": "veg"
+    },
+    {
+      "_id": "61ae11303a2eb79d58f2fec2",
+      "name": "Cheese n Corn",
+      "description": "Sweet & Juicy Golden corn and 100% real mozzarella cheese in a delectable combination !",
+      "image": "https://images.dominos.co.in/new_cheese_n_corn.jpg",
+      "price": 459,
+      "category": "bestseller",
+      "type": "veg"
+    },
+    {
+      "_id": "61ae11303a2eb79d58f2fec3",
+      "name": "Spiced Double Chicken",
+      "description": "Delightful combination of our spicy duo- Pepper Barbecue Chicken and Peri Peri Chicken for Chicken Lovers.",
+      "image": "https://images.dominos.co.in/PIZ5157.jpg",
+      "price": 519,
+      "category": "NEW LAUNCHES",
+      "type": "nonveg"
+    },
+    {
+      "_id": "61ae11303a2eb79d58f2fec4",
+      "name": "Chicken Maximus",
+      "description": "Loaded to the Max with Chicken Tikka, Chicken Keema, Chicken Sausage and a double dose of grilled",
+      "image": "https://images.dominos.co.in/PIZ5158.jpg",
+      "price": 619,
+      "category": "NEW LAUNCHES",
+      "type": "nonveg"
+    },
+    {
+      "_id": "61ae11303a2eb79d58f2fec5",
+      "name": "The 5 Chicken Feast Pizza",
+      "description": "Loaded with 5 different Chicken toppings - grilled Chicken Rashers, Chicken Meatballs, Chicken Tikka",
+      "image": "https://images.dominos.co.in/PIZ5159.jpg",
+      "price": 659,
+      "category": "NEW LAUNCHES",
+      "type": "nonveg"
+    },
+    {
+      "_id": "61ae11303a2eb79d58f2fec6",
+      "name": "Chicken Dominator",
+      "description": "Loaded with double pepper barbecue chicken, peri-peri chicken, chicken tikka & grilled chicken rashers",
+      "image": "https://images.dominos.co.in/new_chicken_dominator.jpg",
+      "price": 579,
+      "category": "nonveg",
+      "type": "nonveg"
+    },
+    {
+      "_id": "61ae11303a2eb79d58f2fec7",
+      "name": "Indo Fusion Chicken Pizza",
+      "description": "Relish the fusion of your favorite chicken toppings -  Peri Peri Chicken, Chicken Pepperoni, Chicken Tikka",
+      "image": "https://images.dominos.co.in/PIZ5160.jpg",
+      "price": 659,
+      "category": "NEW LAUNCHES",
+      "type": "nonveg"
+    },
+    {
+      "_id": "61ae11303a2eb79d58f2fec8",
+      "name": "Clean Bowled Classic Veg Combo",
+      "description": "Onion Pizza Mania + Pepsi PET",
+      "image": "https://images.dominos.co.in/COM01.jpg",
+      "price": 105,
+      "category": "MEALS & COMBOS"
+    },
+    {
+      "_id": "61ae11303a2eb79d58f2fec9",
+      "name": "Clean Bowled Loaded Veg Mountian Dew Combo",
+      "description": "Loaded VG Pizza Mania + Pepsi PET",
+      "image": "https://images.dominos.co.in/new_chicken_dominator.jpg",
+      "price": 187,
+      "category": "MEALS & COMBOS"
+    },
+    {
+      "_id": "61ae11303a2eb79d58f2feca",
+      "name": "Clean Bowled Loaded Non Veg Mountain Dew Combo",
+      "description": "Loaded Non VG Pizza Mania + Pepsi PET",
+      "image": "https://images.dominos.co.in/COM09.jpg",
+      "price": 207,
+      "category": "MEALS & COMBOS"
+    },
+    {
+      "_id": "61ae11303a2eb79d58f2fecb",
+      "name": "Super Over Unthinkable Special Combo",
+      "description": "Reg Unthinkable Pizza + Garlic Bread + Pepsi Black Can",
+      "image": "https://images.dominos.co.in/CMB1195.jpg",
+      "price": 369,
+      "category": "MEALS & COMBOS"
+    }
+  ]

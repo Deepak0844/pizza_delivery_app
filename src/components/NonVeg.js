@@ -1,0 +1,83 @@
+import { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
+import * as React from "react";
+import Button from "@mui/material/Button";
+
+
+export function NonVeg() {
+  const [pizza, setPizza] = useState([]);
+  const getPizza = () => {
+    fetch("http://localhost:9000/pizza")
+      .then((data) => data.json())
+      .then((pza) => setPizza(pza));
+  };
+  useEffect(getPizza, [pizza._id]);
+  return (
+    <div className="pizza">
+      {pizza.map(({ name, description, image, price, _id, type }, index) => (
+        <>
+          {type === "nonveg" ? (
+            <NonVegList
+              name={name}
+              description={description}
+              image={image}
+              price={price}
+              id={_id}
+              key={_id}
+              pizza={pizza}
+              index={index} />
+          ) : (
+            ""
+          )}
+        </>
+      ))}
+    </div>
+  );
+}
+function NonVegList({ name, description, image, price, pizza, index }) {
+  const [cart, setCart] = useState([]);
+  const history = useHistory();
+  const addCart = () => {
+    const result = pizza[index];
+    const same = cart.map(({ name }) => name === result.name);
+    console.log("same:", same);
+    fetch("http://localhost:9000/cart")
+      .then((data) => data.json())
+      .then((crt) => setCart(crt));
+
+    if (!same[0]) {
+      const cartItem = {
+        name: result.name,
+        image: result.image,
+        price: result.price,
+        quantity: "",
+      };
+
+      fetch(`http://localhost:9000/cart`, {
+        method: "POST",
+        body: JSON.stringify(cartItem),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+    } else {
+      return;
+    }
+    history.push("/cart");
+  };
+  return (
+    <div>
+      <div className="pizzaList">
+        <img src={image} alt={name}></img>
+        <h4>{name}</h4>
+        <p>{description}</p>
+        <p>
+          <b>₹{price}</b>
+        </p>
+        <Button onClick={addCart} variant="contained">
+          Add to Cart
+        </Button>
+      </div>
+    </div>
+  );
+}
