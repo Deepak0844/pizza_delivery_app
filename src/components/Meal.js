@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 export function Meal() {
   const [pizza, setPizza] = useState([]);
   const getPizza = () => {
-    fetch("http://localhost:9000/pizza")
+    fetch("https://testing-api-hackathon.herokuapp.com/pizza")
       .then((data) => data.json())
       .then((pza) => setPizza(pza));
   };
@@ -43,7 +43,7 @@ function MealList({ name, description, image, price, pizza, index }) {
     const result = pizza[index];
     const same = cart.map(({ name }) => name === result.name);
     console.log("same:", same);
-    fetch("http://localhost:9000/cart")
+    fetch("https://testing-api-hackathon.herokuapp.com/cart")
       .then((data) => data.json())
       .then((crt) => setCart(crt));
 
@@ -55,7 +55,7 @@ function MealList({ name, description, image, price, pizza, index }) {
         quantity: "",
       };
 
-      fetch(`http://localhost:9000/cart`, {
+      fetch(`https://testing-api-hackathon.herokuapp.com/cart`, {
         method: "POST",
         body: JSON.stringify(cartItem),
         headers: {
