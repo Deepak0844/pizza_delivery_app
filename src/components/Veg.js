@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 export function Veg() {
   const [pizzaVeg, setPizzaVeg] = useState([]);
   const getPizza = () => {
-    fetch("http://localhost:9000/pizza")
+    fetch("https://testing-api-hackathon.herokuapp.com/pizza")
       .then((data) => data.json())
       .then((pza) => setPizzaVeg(pza));
   };
@@ -42,7 +42,7 @@ function VegList({ name, description, image, price, pizzaVeg, index }) {
     const result = pizzaVeg[index];
     console.log(result);
 
-    fetch("http://localhost:9000/cart")
+    fetch("https://testing-api-hackathon.herokuapp.com/cart")
       .then((data) => data.json())
       .then((crt) => setCart(crt));
 
@@ -53,7 +53,7 @@ function VegList({ name, description, image, price, pizzaVeg, index }) {
       quantity: "",
     };
 
-    fetch(`http://localhost:9000/cart`, {
+    fetch(`https://testing-api-hackathon.herokuapp.com/cart`, {
       method: "POST",
       body: JSON.stringify(cartItem),
       headers: {
